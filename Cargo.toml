@@ -1,5 +1,5 @@
 [package]
-name = "{{project-name}}"
+name = "rust_worker"
 version = "0.1.0"
 authors = ["{{authors}}"]
 edition = "2018"
@@ -11,6 +11,7 @@ crate-type = ["cdylib", "rlib"]
 default = ["console_error_panic_hook"]
 
 [dependencies]
+pulldown-cmark = "0.4.0"
 cfg-if = "0.1.2"
 worker = "0.0.9"
 serde_json = "1.0.67"
